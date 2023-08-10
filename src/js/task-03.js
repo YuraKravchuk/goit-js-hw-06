@@ -12,3 +12,10 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+function render (arr) {
+  const ul = document.querySelector('gallery');
+  const image = arr.map(())
+}
+
+render(images);
