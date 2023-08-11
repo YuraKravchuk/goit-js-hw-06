@@ -13,9 +13,15 @@ const images = [
   },
 ];
 
+
+
 function render (arr) {
-  const ul = document.querySelector('gallery');
-  const image = arr.map(())
+  const ul = document.querySelector('.gallery');
+ 
+  const image = arr.map((imag)=> `<li style="display:'flex'"><img width="300"  src="${imag.url}" alt="${imag.alt}"/></li>`).join('');
+  ul.insertAdjacentHTML('beforeend', image);
+
 }
+
 
 render(images);
